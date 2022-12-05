@@ -1,0 +1,14 @@
+{% extends 'base_sous_pages.html' %}
+
+{% block content %}
+
+<div class = "font_article">
+{% autoescape off %}
+    {{article}}
+{% endautoescape %}
+{% if image %}
+    <img src= {{image}} >
+{% endif %}
+</div>
+
+{% endblock content %}

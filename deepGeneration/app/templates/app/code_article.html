@@ -1,0 +1,16 @@
+{% extends 'base_sous_pages.html' %}
+
+{% block content %}
+
+<div class = "font_blog">
+    <div id = "zone">
+        <pre> <textarea name="" id="" cols="" rows="25">{{article}} </textarea></pre>
+    </div>
+    <div class= "btn-group">
+        <div id="btn-copy"><button class = "btn-copier">Copier</button></div>
+        <div id="btn-aperçu"><button class="btn-aperçu"><a href={% url 'url_article' %}>Aperçu </a></button></div>
+    </div>
+</div>
+
+
+{% endblock content %}

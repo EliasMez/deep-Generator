@@ -1,0 +1,16 @@
+{% extends 'base_sous_pages.html' %}
+
+{% block content %}
+{% if form %}
+
+<form method="post">
+    {% csrf_token %}
+    <div id="section-form">
+        <fieldset >
+            {{form}}
+            <input type="submit" value="Générer" style="width:80px;">
+        </fieldset>
+    </div>
+</form>
+{% endif %}
+{% endblock content %} 
